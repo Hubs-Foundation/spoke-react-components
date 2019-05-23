@@ -61,14 +61,14 @@ jobs:
           paths:
             - .
 
-  release:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/spoke-react-components
-      - run:
-          name: Release
-          command: npm run release
+  # release:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/spoke-react-components
+  #     - run:
+  #         name: Release
+  #         command: npm run release
 
   deploy-storybook:
     <<: *defaults
@@ -93,14 +93,14 @@ workflows:
           requires:
             - install
 
-      - release:
-          requires:
-            - build
-            - lint
-          filters:
-            branches:
-              only:
-                - master
+      # - release:
+      #     requires:
+      #       - build
+      #       - lint
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
 
       - deploy-storybook:
           requires:
