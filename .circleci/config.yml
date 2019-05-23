@@ -103,8 +103,8 @@ workflows:
       #           - master
 
       - deploy-storybook:
-          requires:
-            - release
+          # requires:
+          #   - release
           filters:
             branches:
               only:
