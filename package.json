@@ -9,7 +9,8 @@
     "build-lib": "tsc",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "test": "run-s lint"
   },
   "author": "Robert Long",
   "license": "MP-2.0",
