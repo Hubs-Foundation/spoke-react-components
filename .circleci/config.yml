@@ -103,6 +103,9 @@ workflows:
       #           - master
 
       - deploy-storybook:
+          requires:
+            - build
+            - lint
           # requires:
           #   - release
           filters:
