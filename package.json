@@ -1,7 +1,7 @@
 {
   "name": "spoke-react-components",
   "version": "1.0.0",
-  "description": "React components extracted from Mozilla Spoke",
+  "description": "React components extracted from Spoke",
   "author": "Robert Long",
   "license": "MPL-2.0",
   "repository": {
